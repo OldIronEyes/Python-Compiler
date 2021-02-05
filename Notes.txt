@@ -1,0 +1,21 @@
+Steps to Compile a Program
+    1. Lexical Analysis
+        Input: Python File
+        Output: List of Token Tuples in the form <Token Class, Token String>
+    2. Parsing
+    3. Semantic Analysis
+    4. Optimization
+    5. Code Generation
+
+Lexical Analysis
+    Token Classes: Whitespace, Keywords, Identifiers, Operators, Strings, Numbers, (, ), :, "/', =
+    Lexemes: The raw string in a token
+    print("test") should become
+        Token Class     Lexeme
+        O               print
+        (               (
+        "               "
+        S               test
+        "               "
+        )               )
+        W               /n
